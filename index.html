@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan mcc71</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="judul">Ini Judul List Pokemon</h1>
+    <!-- <section id="a">
+        <p class="p1">ini sebuah paragraf ke-1</p>
+        <p class="p2">ini sebuah paragraf ke-2</p>
+        <a href="">ini link</a>
+        <p class="p3">ini sebuah paragraf ke-3</p>
+        <p class="p4">ini sebuah paragraf ke-4</p>
+        <div id="b">
+            <p id="a" class="p5">ini paragraf nyasar</p>
+        </div>
+    </section>
+    <section id="b">
+        <p id="a">ini paragraf 5</p>
+        <ul id="a">
+            <li class="list">ini sebuah list</li>
+            <li class="list">ini sebuah list</li>
+            <li class="list">ini sebuah list</li>
+            <li class="list">ini sebuah list</li>
+        </ul>
+    </section> -->
+
+
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Action</th>
+            </th>
+        </thead>
+        <tbody id="tablePoke">
+            
+        </tbody>
+    </table>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalDetailPoke" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="card">
+                    <div class="card-body" >
+                        <div class="container">
+                            <div class="row">
+                              <div class="col">
+                                
+                                <div id="gambar" class="text-center" >
+                                  
+                                  <div align="center" >
+                                  <div class="lingkaran" id="bulet">
+                                   
+                                      
+                                    <img id = "gambarPoke"src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"/>
+                                  </div>
+                                </div>
+                                    <table class="table">
+                                        
+                                          <tr>
+                                                                                    
+                                        <tbody id="type">
+                                          
+                                        </tbody>
+                                      </table>
+                                    
+                   
+                                    
+                                    
+                                    <h1 id="gantiPoke"for=""><gantiPokemon/h1></gantiPokemon>
+                                
+                                
+                                <hr class="bg-danger border-2 border-top border-danger"> </hr>
+                              </div>
+                              <div class="row">
+                                <div class="col" id = "colType">
+                                    <div class="shadow p-3 mb-5 bg-body rounded">
+                                  <h2>STATS</h2>
+                                  <hr class="bg-danger border-2 border-top border-danger"> </hr>
+                                  <label id ="hp"for=""></label>
+                                    <div class="progress" id="Php">
+                   
+                                    </div>
+
+                                    <label id ="attack"for="">attack</label>
+                                    <div class="progress" id="PAttack">
+                                    
+                                    </div>
+                                    <label id ="defense"for="">attack</label>
+                                    <div class="progress" id="PDefense">
+                                    
+                                    </div>
+                                    <label id ="special-attack" for="">attack</label>
+                                    <div class="progress" id="Psa">
+                                    
+                                    </div>
+                                    <label id ="special-defense" for="">attack</label>
+                                    <div class="progress" id="Psd">
+                                    
+                                    </div>
+                               
+                                  </div>
+                                </div>
+                                  <div class="col" >
+                                    
+                                    
+                                       
+                                        <div class="row">
+                                            <div class="shadow p-3 mb-5 bg-body rounded">
+                                                
+                                            <h2>Ability</h2>
+                                            
+                                            <hr class="bg-danger border-2 border-top border-danger"> </hr>
+                                            
+                                          <div class="col">
+                                            <table class="table">
+                                        
+                                                <tr>
+                                                  
+                                              
+                                              <tbody  id = "ability">
+                                                
+                                              </tbody>
+                                            </table>
+                                          
+                                        </div>
+                                    </div>
+                                        </div>
+                                        <!-- <div class="row" >
+                                            <div class="shadow p-3 mb-5 bg-body rounded">
+                                          <div class="col"id="rowBerat">
+                                            
+                                            <h4> Height</h4>
+                                            <p id = "Height"></p>
+                                        </div>
+                                          </div>
+                                          <div class="col" id="rowTinggi">
+                                            <div class="shadow p-3 mb-5 bg-body rounded">
+                                            <h4> Weight</h4>
+                                            <div></div>
+                                            <p id="Weight"></p>
+                                            </div>
+                                          </div>
+                                          
+                                        </div> -->
+                                        
+                                    
+                                    
+                                    </div>
+                                    
+                                    <div class="container" >
+                                        <div class="row justify-content-md-center">
+                                            <div class="col-md-auto">
+                                            <div class="shadow p-3 mb-5 bg-body rounded">
+                                            <h4> Weight</h4>
+                                            <div id="Weight"> </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-auto">
+                                            <div class="shadow p-3 mb-5 bg-body rounded">
+                                            <h4> Height</h4>
+                                            <div id="Height"> </div>
+                                        </div>
+
+                                          </div>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                            </div>
+                    </div>
+                  </div>
+        </div>
+        <!-- </div>
+        </div> -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
