@@ -20,6 +20,142 @@
     width: 170px;
     height: 170px;
     
-    background: #804f4f;
-    border-radius: 100%;
+    background: #b9b9b9;
+    border-radius: 800%;
+}
+.type{
+    width: 170px;
+    height: 170px;
+}
+
+#types{
+    margin-bottom: 10px;
+}
+
+
+
+.hp{
+    background-color: #ff0000 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.attack{
+    background-color: #a74804 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.defense{
+    background-color: #ffcc00 !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.special-attack{
+    background-color: #306cfa !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.special-defense{
+    background-color: #71ff2a !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.speed{
+    background-color: #fa034d !important;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.unknown{
+    color: #FFF;
+    background-color: #6db4a0;
+}
+
+.bug{
+    color: #FFF;
+    background-color: #788315;
+}
+
+.dark{
+    color: #FFF;
+    background-color: #705848;
+}
+
+.dragon{
+    color: #FFF;
+    background-color: #7038F8;
+}
+
+.electric{
+    color: #FFF;
+    background-color: #F8D030;
+}
+
+.fairy{
+    color: #FFF;
+    background-color: #EE99AC;
+}
+
+.fighting{
+    color: #FFF;
+    background-color: #C03028;
+}
+
+.fire{
+    color: #FFF;
+    background-color: #F08030;
+}
+
+.flying{
+    color: #FFF;
+    background-color: #A890F0;
+}
+
+.ghost{
+    color: #FFF;
+    background-color: #705898;
+}
+
+.grass{
+    color: #FFF;
+    background-color: #78C850;
+}
+
+.ground{
+    color: #FFF;
+    background-color: #E0C068;
+}
+
+.ice{
+    color: #FFF;
+    background-color: #98D8D8;
+}
+
+.normal{
+    color: #FFF;
+    background-color: #A8A878;
+}
+
+.poison{
+    color: #FFF;
+    background-color: #A040A0;
+}
+
+.rock{
+    color: #FFF;
+    background-color: #B8A038;
+}
+
+.steel{
+    color: #FFF;
+    background-color: #B8B8D0;
+}
+
+.water{
+    color: #FFF;
+    background-color: #6890F0;
 }
